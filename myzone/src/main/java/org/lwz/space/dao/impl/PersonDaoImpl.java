@@ -18,7 +18,7 @@ import java.util.List;
  */
 
 @Repository(value = "personDao")
-public class PersonDaoImpl implements PersonDao{
+public class PersonDaoImpl implements PersonDao {
 
     @Resource
     private SessionFactory sessionFactory;
@@ -27,12 +27,12 @@ public class PersonDaoImpl implements PersonDao{
     @Override
     public void save(Person person) {
         //TODO getCurrentSession()
-        this.sessionFactory.openSession().save(person);
+        this.sessionFactory.getCurrentSession().save(person);
     }
 
     @Override
     public List<Person> list() {
-        Query query = this.sessionFactory.openSession().createSQLQuery("SELECT * FROM t_person");
+        Query query = this.sessionFactory.getCurrentSession().createQuery("FROM Person");
         return query.list();
     }
 

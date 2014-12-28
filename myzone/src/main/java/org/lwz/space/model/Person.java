@@ -104,4 +104,9 @@ public class Person {
         this.birthDay = birthDay;
         this.genger = genger;
     }
+
+    @Override
+    public String toString() {
+        return this.name + ":" +this.genger;
+    }
 }

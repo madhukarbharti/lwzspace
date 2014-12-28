@@ -5,4 +5,5 @@ package org.lwz.space.model;
  */
 public enum Genger {
     MAN,WOMAN
+
 }

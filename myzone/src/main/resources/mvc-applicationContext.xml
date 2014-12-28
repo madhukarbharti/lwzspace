@@ -13,7 +13,8 @@
 		http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
 
        <context:annotation-config />
-       <context:component-scan base-package="org.lwz.space"/>
+       <context:component-scan base-package="org.lwz.space.controller"/>
+       <!--<mvc:resources location="/resources/" mapping="/resources/**"/>-->
 
        <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
               <property name="prefix" value="/WEB-INF/jsp/"></property>
