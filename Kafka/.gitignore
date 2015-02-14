@@ -1,0 +1,7 @@
+*.idea/
+*.[oa]
+doc/
+out/
+*.iml
+build.xml
+tool.xml
